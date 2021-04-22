@@ -1,3 +1,9 @@
+<?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +14,13 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+use Blog\BlogView;
 
+$blog = new BlogView();
+
+$blog->showBlogList();
+
+?>
 </body>
 </html>
