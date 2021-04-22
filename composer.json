@@ -6,5 +6,11 @@
             "email": "asw11wsa@naver.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Database\\" : "/lib/Database",
+            "Blog\\" : "/lib/Blog"
+        }
+    },
     "require": {}
 }
