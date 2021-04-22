@@ -8,8 +8,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Database\\" : "/lib/Database",
-            "Blog\\" : "/lib/Blog"
+            "Database\\" : "lib/Database",
+            "Blog\\" : "lib/Blog"
         }
     },
     "require": {}
