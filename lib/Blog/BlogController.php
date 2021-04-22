@@ -9,4 +9,8 @@ class BlogController extends Blog {
         $results = $this->getAllContent();
         return $results;
     }
+
+    public function writeBlog($title,$content){
+        $this->createBlog($title,$content);
+    }
 }
