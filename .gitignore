@@ -1,2 +1,6 @@
 /vendor/
 /lib/Database/*
+/assets/images/*
+/assets/img/*
+index_design.php
+/assets/vendor/*
