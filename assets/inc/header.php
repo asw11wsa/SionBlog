@@ -35,6 +35,9 @@ require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
 
+    <!-- Jquery file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!-- =======================================================
     * Template Name: BizLand - v3.1.0
     * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/

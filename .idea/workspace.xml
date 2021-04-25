@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b094e1c-7e31-429c-a2b2-8c683149624f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SionBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SionBlog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/inc/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/inc/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/wirte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/write_process.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Blog/BlogView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Blog/BlogView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/inc/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/inc/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_css/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_css/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/wirte.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/study/s_vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,7 +76,9 @@
       <workItem from="1619075907351" duration="26000" />
       <workItem from="1619076124652" duration="4185000" />
       <workItem from="1619137287797" duration="3827000" />
-      <workItem from="1619142843386" duration="4132000" />
+      <workItem from="1619142843386" duration="5202000" />
+      <workItem from="1619157526396" duration="1628000" />
+      <workItem from="1619162727537" duration="2050000" />
     </task>
     <servers />
   </component>
