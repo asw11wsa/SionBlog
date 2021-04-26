@@ -4,7 +4,12 @@ ini_set("display_errors", 1);
 
 session_start();
 
+
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
+
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
 ?>
 <!DOCTYPE html>
 <html lang="en">
