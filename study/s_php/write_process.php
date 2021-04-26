@@ -1,8 +1,11 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Blog\BlogController;
+use Css\CssController;
 
-$write = new BlogController();
+$write = new CssController();
 
-$write->writeBlog('hello this is big test2','this is second update in webpage');
+$write->writeCss($_POST['title'],$_POST['content']);
+
+Header("Location:/study/s_css/index.php?con=");
+
