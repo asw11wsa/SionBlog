@@ -1,10 +1,10 @@
 <?php
 
-namespace Css;
+namespace Html;
 
-use Css\Javascript;
+use Html\Html;
 
-class CssController extends Javascript {
+class HtmlController extends Html {
     protected function giveCssList(){
         $results = $this->getAllContent();
         return $results;

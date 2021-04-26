@@ -1,10 +1,10 @@
 <?php
 
-namespace Css;
+namespace Html;
 
-use Css\HtmlController;
+use Html\HtmlController;
 
-class CssView extends HtmlController {
+class HtmlView extends HtmlController {
     public function showCssList(){
         $results = $this->giveCssList();
         $num = 0;

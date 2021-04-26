@@ -1,10 +1,10 @@
 <?php
 
-namespace Css;
+namespace Vue;
 
-use Css\Javascript;
+use Vue\Vue;
 
-class CssController extends Javascript {
+class VueController extends Vue {
     protected function giveCssList(){
         $results = $this->getAllContent();
         return $results;

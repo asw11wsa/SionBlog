@@ -1,10 +1,10 @@
 <?php
 
-namespace Css;
+namespace Vue;
 
-use Css\HtmlController;
+use Vue\VueController;
 
-class CssView extends HtmlController {
+class VueView extends VueController {
     public function showCssList(){
         $results = $this->giveCssList();
         $num = 0;
