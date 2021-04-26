@@ -4,8 +4,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Blog\BlogView;
+use Css\CssView;
 
-$list = new BlogView();
+$list = new CssView();
 
 $list->showPickId($_POST['id']);
