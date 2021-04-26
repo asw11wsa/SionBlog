@@ -77,7 +77,7 @@ require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
                 <li><a class="nav-link scrollto" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_html/index.php?con=">HTML</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_css/index.php?con=">CSS</a></li>
-                <li><a class="nav-link scrollto " href="/study/s_javascript/index.php?con=">JAVASCRIPT</a></li>
+                <li><a class="nav-link scrollto" href="/study/s_javascript/index.php?con=">JAVASCRIPT</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_vue/index.php?con=">VUE</a></li>
                 <li class="dropdown"><a href="/study/s_php/index.php?con="><span>PHP</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
