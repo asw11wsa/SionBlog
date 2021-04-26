@@ -6,6 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/lib/Database" isTestSource="false" packagePrefix="Database\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/Css" isTestSource="false" packagePrefix="Css\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/Html" isTestSource="false" packagePrefix="Html\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/Javascript" isTestSource="false" packagePrefix="Javascript\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/Php" isTestSource="false" packagePrefix="Php\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/Vue" isTestSource="false" packagePrefix="Vue\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
     </content>
     <orderEntry type="inheritedJdk" />

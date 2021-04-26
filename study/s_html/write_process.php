@@ -7,5 +7,5 @@ $write = new HtmlController();
 
 $write->writeHtml($_POST['title'],$_POST['content']);
 
-Header("Location:/study/s_css/index.php?con=");
+Header("Location:/study/s_html/index.php?con=");
 

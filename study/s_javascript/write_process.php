@@ -1,11 +1,11 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Css\CssController;
+use Javascript\JavascriptController;
 
-$write = new CssController();
+$write = new JavascriptController();
 
-$write->writeCss($_POST['title'],$_POST['content']);
+$write->writeJavascript($_POST['title'],$_POST['content']);
 
-Header("Location:/study/s_css/index.php?con=");
+Header("Location:/study/s_javascript/index.php?con=");
 

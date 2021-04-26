@@ -2,11 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b094e1c-7e31-429c-a2b2-8c683149624f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SionBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SionBlog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/inc/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/inc/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/inc/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/s_css/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/s_css/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Javascript/Javascript.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Javascript/Javascript.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Javascript/JavascriptController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Javascript/JavascriptController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Javascript/JavascriptView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Javascript/JavascriptView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Php/Php.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Php/Php.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Php/PhpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Php/PhpController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Php/PhpView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Php/PhpView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Vue/Vue.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Vue/Vue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Vue/VueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Vue/VueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Vue/VueView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Vue/VueView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_html/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/write_process.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_html/write_process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/list_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/list_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/view_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/view_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/write_process.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/write_process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/list_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/list_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/view_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/view_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/write_process.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/write_process.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/list_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/list_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/view_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/view_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/write_process.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/write_process.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/study/s_vue" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,7 +84,7 @@
       <recent name="$PROJECT_DIR$/study/s_php" />
       <recent name="$PROJECT_DIR$/study/s_javascript" />
       <recent name="$PROJECT_DIR$/study/s_html" />
-      <recent name="$PROJECT_DIR$/study/s_css" />
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/img" />
@@ -79,6 +109,10 @@
       <workItem from="1619142843386" duration="5202000" />
       <workItem from="1619157526396" duration="1628000" />
       <workItem from="1619162727537" duration="2050000" />
+      <workItem from="1619333607738" duration="1702000" />
+      <workItem from="1619397003220" duration="1087000" />
+      <workItem from="1619399029436" duration="7345000" />
+      <workItem from="1619415892322" duration="1610000" />
     </task>
     <servers />
   </component>

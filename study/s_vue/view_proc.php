@@ -4,8 +4,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Css\CssView;
+use Vue\VueView;
 
-$list = new CssView();
+$list = new VueView();
 
 $list->showPickId($_POST['id']);

@@ -5,7 +5,7 @@ namespace Php;
 use Php\Php;
 
 class PhpController extends Php {
-    protected function giveCssList(){
+    protected function givePhpList(){
         $results = $this->getAllContent();
         return $results;
     }
@@ -15,7 +15,7 @@ class PhpController extends Php {
         return $results;
     }
 
-    public function writeCss($title,$content){
-        $this->createCss($title,$content);
+    public function writePhp($title,$content){
+        $this->createPhp($title,$content);
     }
 }

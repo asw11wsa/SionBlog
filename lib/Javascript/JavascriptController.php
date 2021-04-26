@@ -5,7 +5,7 @@ namespace Javascript;
 use Javascript\Javascript;
 
 class JavascriptController extends Javascript {
-    protected function giveCssList(){
+    protected function giveJavascriptList(){
         $results = $this->getAllContent();
         return $results;
     }
@@ -15,7 +15,7 @@ class JavascriptController extends Javascript {
         return $results;
     }
 
-    public function writeCss($title,$content){
-        $this->createCss($title,$content);
+    public function writeJavascript($title,$content){
+        $this->createJavascript($title,$content);
     }
 }

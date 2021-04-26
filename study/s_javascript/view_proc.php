@@ -4,8 +4,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Css\CssView;
+use Javascript\JavascriptView;
 
-$list = new CssView();
+$list = new JavascriptView();
 
 $list->showPickId($_POST['id']);

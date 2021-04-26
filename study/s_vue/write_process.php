@@ -1,11 +1,11 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Css\CssController;
+use Vue\VueController;
 
-$write = new CssController();
+$write = new VueController();
 
-$write->writeCss($_POST['title'],$_POST['content']);
+$write->writeVue($_POST['title'],$_POST['content']);
 
-Header("Location:/study/s_css/index.php?con=");
+Header("Location:/study/s_vue/index.php?con=");
 

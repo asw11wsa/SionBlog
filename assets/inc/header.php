@@ -79,14 +79,15 @@ require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
                 <li><a class="nav-link scrollto" href="/study/s_css/index.php?con=">CSS</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_javascript/index.php?con=">JAVASCRIPT</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_vue/index.php?con=">VUE</a></li>
-                <li class="dropdown"><a href="/study/s_php/index.php?con="><span>PHP</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                        <li><a href="#">BASIC</a></li>
-                        <li><a href="#">OOP</a></li>
-                        <li><a href="#">LARAVEL7</a></li>
-                        <li><a href="#">LARAVEL8</a></li>
-                    </ul>
-                </li>
+                <li><a class="nav-link scrollto" href="/study/s_php/index.php?con=">PHP</a></li>
+<!--                <li class="dropdown"><a href="/study/s_php/index.php?con="><span>PHP</span> <i class="bi bi-chevron-down"></i></a>-->
+<!--                    <ul>-->
+<!--                        <li><a href="#">BASIC</a></li>-->
+<!--                        <li><a href="#">OOP</a></li>-->
+<!--                        <li><a href="#">LARAVEL7</a></li>-->
+<!--                        <li><a href="#">LARAVEL8</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

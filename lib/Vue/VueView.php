@@ -5,15 +5,15 @@ namespace Vue;
 use Vue\VueController;
 
 class VueView extends VueController {
-    public function showCssList(){
-        $results = $this->giveCssList();
+    public function showVueList(){
+        $results = $this->giveVueList();
         $num = 0;
         foreach ($results as $result){
             $num += 1;
             $put = '';
             $put .= "<tr>";
             $put .= "<th scope='row'>".$num."</th>";
-            $put .= "<td><a href='/study/s_css/index.php?con=view&id={$result['id']}'>".$result['title']."</a></td>";
+            $put .= "<td><a href='/study/s_vue/index.php?con=view&id={$result['id']}'>".$result['title']."</a></td>";
             $put .= "<td>".$result['created_at']."</td>";
             $put .= "</tr>";
             echo $put;
