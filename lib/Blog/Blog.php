@@ -17,4 +17,13 @@ class Blog extends Database{
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$title,$content]);
     }
+
+    protected function getPickId($id){
+        $sql = "SELECT * FROM blogs WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+
+        $results = $stmt->fetchAll();
+        return $results;
+    }
 }

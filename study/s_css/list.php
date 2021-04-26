@@ -2,17 +2,28 @@
 <script>
 
     $.ajax({
-        async: false,
+        async: true,
         url:"/study/s_css/list_proc.php",
         type : "POST",
         complete : function(r){
-            var res = r.responseText;
-            console.log(r);
-            // $("#list"+div).empty();
+            let res = r.responseText;
+            // console.log(res);
+            $("#list").empty();
             $("#list").append(res);
         }
     }
 );
 </script>
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">생성날짜</th>
+        </tr>
+        </thead>
+        <tbody id="list"></tbody>
+    </table>
+</div>
 
-<div id="list"></div>

@@ -10,6 +10,11 @@ class BlogController extends Blog {
         return $results;
     }
 
+    protected function givePickId($id){
+        $results = $this->getPickId($id);
+        return $results;
+    }
+
     public function writeBlog($title,$content){
         $this->createBlog($title,$content);
     }
