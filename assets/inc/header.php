@@ -68,14 +68,14 @@ require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="index.php">Sion Blog<span>.</span></a></h1>
+        <h1 class="logo"><a href="/">Sion Blog<span>.</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">HTML</a></li>
+                <li><a class="nav-link scrollto" href="/">Home</a></li>
+                <li><a class="nav-link scrollto" href="/study/s_css/index.php?con=">HTML</a></li>
                 <li><a class="nav-link scrollto" href="#services">CSS</a></li>
                 <li><a class="nav-link scrollto " href="#portfolio">JAVASCRIPT</a></li>
                 <li><a class="nav-link scrollto" href="#team">VUE</a></li>
