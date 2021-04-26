@@ -4,8 +4,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
-use Css\CssView;
+use Html\HtmlView;
 
-$list = new CssView();
+$list = new HtmlView();
 
-$list->showCssList();
+$list->showHtmlList();
