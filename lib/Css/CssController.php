@@ -2,9 +2,9 @@
 
 namespace Css;
 
-use Css\Javascript;
+use Css\Css;
 
-class CssController extends Javascript {
+class CssController extends Css {
     protected function giveCssList(){
         $results = $this->getAllContent();
         return $results;

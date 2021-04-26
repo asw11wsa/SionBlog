@@ -2,9 +2,9 @@
 
 namespace Css;
 
-use Css\HtmlController;
+use Css\CssController;
 
-class CssView extends HtmlController {
+class CssView extends CssController {
     public function showCssList(){
         $results = $this->giveCssList();
         $num = 0;
