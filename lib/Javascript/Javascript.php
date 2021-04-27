@@ -28,19 +28,19 @@ class Javascript extends Database{
     }
 
     protected function removeJavascript($id){
-        $sql = "DELETE FROM javascript WHERE id = ?";
+        $sql = "DELETE FROM javascripts WHERE id = ?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$id]);
     }
 
     protected function renewJavascript($title,$content,$id){
-        $sql = "UPDATE javascript SET title = ?, content = ?, updated_at = current_timestamp() WHERE id = ?";
+        $sql = "UPDATE javascripts SET title = ?, content = ?, updated_at = current_timestamp() WHERE id = ?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$title,$content,$id]);
     }
 
     protected function addCount($id){
-        $sql = "UPDATE javascript SET view_count = view_count + 1 WHERE id = ?";
+        $sql = "UPDATE javascripts SET view_count = view_count + 1 WHERE id = ?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$id]);
     }
