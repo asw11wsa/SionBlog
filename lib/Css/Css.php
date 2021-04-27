@@ -26,4 +26,10 @@ class Css extends Database{
         $results = $stmt->fetchAll();
         return $results;
     }
+
+    protected function removeCss($id){
+        $sql = "DELETE FROM csss WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
 }

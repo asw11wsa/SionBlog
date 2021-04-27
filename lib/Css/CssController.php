@@ -18,4 +18,7 @@ class CssController extends Css {
     public function writeCss($title,$content){
         $this->createCss($title,$content);
     }
+    public function deleteCss($id){
+        $this->removeCss($id);
+    }
 }
