@@ -26,4 +26,22 @@ class Html extends Database{
         $results = $stmt->fetchAll();
         return $results;
     }
+
+    protected function removeHtml($id){
+        $sql = "DELETE FROM htmls WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
+
+    protected function renewHtml($title,$content,$id){
+        $sql = "UPDATE htmls SET title = ?, content = ?, updated_at = current_timestamp() WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$title,$content,$id]);
+    }
+
+    protected function addCount($id){
+        $sql = "UPDATE htmls SET view_count = view_count + 1 WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
 }

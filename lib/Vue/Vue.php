@@ -26,4 +26,22 @@ class Vue extends Database{
         $results = $stmt->fetchAll();
         return $results;
     }
+
+    protected function removeVue($id){
+        $sql = "DELETE FROM vues WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
+
+    protected function renewVue($title,$content,$id){
+        $sql = "UPDATE vues SET title = ?, content = ?, updated_at = current_timestamp() WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$title,$content,$id]);
+    }
+
+    protected function addCount($id){
+        $sql = "UPDATE vues SET view_count = view_count + 1 WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
 }

@@ -18,4 +18,16 @@ class PhpController extends Php {
     public function writePhp($title,$content){
         $this->createPhp($title,$content);
     }
+
+    public function deletePhp($id){
+        $this->removePhp($id);
+    }
+
+    public function updatePhp($id,$title,$content){
+        $this->renewPhp($id,$title,$content);
+    }
+
+    public function countPlus($id){
+        $this->addCount($id);
+    }
 }

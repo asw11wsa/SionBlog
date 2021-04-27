@@ -18,4 +18,16 @@ class JavascriptController extends Javascript {
     public function writeJavascript($title,$content){
         $this->createJavascript($title,$content);
     }
+
+    public function deleteJavascript($id){
+        $this->removeJavascript($id);
+    }
+
+    public function updateJavascript($id,$title,$content){
+        $this->renewJavascript($id,$title,$content);
+    }
+
+    public function countPlus($id){
+        $this->addCount($id);
+    }
 }

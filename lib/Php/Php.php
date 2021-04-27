@@ -26,4 +26,22 @@ class Php extends Database{
         $results = $stmt->fetchAll();
         return $results;
     }
+
+    protected function removePhp($id){
+        $sql = "DELETE FROM phps WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
+
+    protected function renewPhp($title,$content,$id){
+        $sql = "UPDATE phps SET title = ?, content = ?, updated_at = current_timestamp() WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$title,$content,$id]);
+    }
+
+    protected function addCount($id){
+        $sql = "UPDATE phps SET view_count = view_count + 1 WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
 }

@@ -29,4 +29,14 @@ class VueView extends VueController {
             echo $put;
         }
     }
+
+    public function showPickIdToUpdate($id){
+        $results = $this->givePickId($id);
+        foreach ($results as $result){
+            $put = '';
+            $put .= "<input type='text' name='title' value='".$result['title']."'></input>";
+            $put .= "<input type='text' name='content' value='".$result['content']."'></input>";
+            echo $put;
+        }
+    }
 }

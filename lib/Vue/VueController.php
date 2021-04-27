@@ -18,4 +18,16 @@ class VueController extends Vue {
     public function writeVue($title,$content){
         $this->createVue($title,$content);
     }
+
+    public function deleteVue($id){
+        $this->removeVue($id);
+    }
+
+    public function updateVue($id,$title,$content){
+        $this->renewVue($id,$title,$content);
+    }
+
+    public function countPlus($id){
+        $this->addCount($id);
+    }
 }
