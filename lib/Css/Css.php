@@ -32,4 +32,10 @@ class Css extends Database{
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$id]);
     }
+
+    protected function renewCss($title,$content,$id){
+        $sql = "UPDATE csss SET title = ?, content = ? WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$title,$content,$id]);
+    }
 }
