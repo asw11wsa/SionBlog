@@ -11,10 +11,13 @@ switch($_POST['functionName']){
         callList();
         break;
     case "show" :
-        show();
+        show($_POST['id']);
         break;
     case "write" :
         write($_POST['title'],$_POST['content']);
+        break;
+    case "updateView" :
+        showToUpdate($_POST['id']);
         break;
     case "update" :
         update($_POST['title'],$_POST['content'],$_POST['id']);
@@ -32,10 +35,10 @@ function callList(){
 
     $list->showCssList();
 }
-function show(){
+function show($id){
     $list = new CssView();
 
-    $list->showPickId($_POST['id']);
+    $list->showPickId($id);
 }
 
 function write($title,$content){
@@ -48,4 +51,10 @@ function update($title,$content,$id){
     $write = new CssController();
 
     $write->updateCss($title,$content,$id);
+}
+
+function showToUpdate($id){
+    $list = new CssView();
+
+    $list->showPickIdToUpdate($id);
 }

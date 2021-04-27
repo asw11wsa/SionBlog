@@ -3,8 +3,11 @@
 
     $.ajax({
         async: true,
-        url:"/study/s_css/list_proc.php",
+        url:"/study/s_css/s_css_proc.php",
         type : "POST",
+        data:{
+            functionName:"list"
+        },
         complete : function(r){
             let res = r.responseText;
             // console.log(res);

@@ -1,7 +1,27 @@
 <div class="container">
-<form method="post" action="/study/s_css/write_process.php">
+<form method="post">
     <input type="text" name="title" value=""><br>
     <input type="text" name="content">
-    <button type="submit">글작성</button>
+    <button type="submit" onclick="writeCss()">글작성</button>
 </form>
 </div>
+
+<script>
+    function writeCss(){
+        $.ajax({
+                async: true,
+                url:"/study/s_css/s_css_proc.php",
+                type : "POST",
+                data : {
+                    functionName: "write",
+                    title: $('input[name=title]').val(),
+                    content: $('input[name=content]').val()
+                },
+                complete : function(){
+                    //console.log(<?//=$_GET['id']?>//);
+                    location.href="/study/s_css/index.php?con=";
+                }
+            }
+        );
+    }
+</script>

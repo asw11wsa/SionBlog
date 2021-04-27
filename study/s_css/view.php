@@ -3,9 +3,10 @@
 
     $.ajax({
             async: true,
-            url:"/study/s_css/view_proc.php",
+            url:"/study/s_css/s_css_proc.php",
             type : "POST",
             data : {
+                functionName: "show",
                 id : <?= $_GET['id']?>
             },
             complete : function(r){
@@ -42,8 +43,8 @@
                     do you want to delete this contents?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="deleteContents()">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+                    <button type="button" class="btn btn-primary" onclick="deleteContents()">YES</button>
                 </div>
             </div>
         </div>
@@ -54,13 +55,14 @@
     function deleteContents(){
         $.ajax({
                 async: true,
-                url:"/study/s_css/delete_proc.php",
+                url:"/study/s_css/s_css_proc.php",
                 type : "POST",
                 data : {
+                    functionName: "delete",
                     id: <?= $_GET['id']?>
                 },
                 complete : function(){
-                    console.log(<?=$_GET['id']?>);
+                    //console.log(<?//=$_GET['id']?>//);
                     location.href="/study/s_css/index.php?con=";
                 }
             }
