@@ -34,7 +34,7 @@ class Css extends Database{
     }
 
     protected function renewCss($title,$content,$id){
-        $sql = "UPDATE csss SET title = ?, content = ? WHERE id = ?";
+        $sql = "UPDATE csss SET title = ?, content = ?, updated_at = current_timestamp() WHERE id = ?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$title,$content,$id]);
     }
