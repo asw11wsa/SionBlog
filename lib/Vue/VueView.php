@@ -25,6 +25,7 @@ class VueView extends VueController {
         foreach ($results as $result){
             $put = '';
             $put .= "<div>".$result['title']."</div>";
+            $put .= "<div>".$result['content']."</div>";
             echo $put;
         }
     }
