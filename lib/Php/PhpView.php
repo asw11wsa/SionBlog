@@ -15,6 +15,7 @@ class PhpView extends PhpController {
             $put .= "<th scope='row'>".$num."</th>";
             $put .= "<td><a href='/study/s_php/index.php?con=view&id={$result['id']}'>".$result['title']."</a></td>";
             $put .= "<td>".$result['created_at']."</td>";
+            $put .= "<td>".$result['view_count']."</td>";
             $put .= "</tr>";
             echo $put;
         }
