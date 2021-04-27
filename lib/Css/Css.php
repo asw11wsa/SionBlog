@@ -38,4 +38,10 @@ class Css extends Database{
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$title,$content,$id]);
     }
+
+    protected function addCount($id){
+        $sql = "UPDATE csss SET view_count = view_count + 1 WHERE id = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+    }
 }

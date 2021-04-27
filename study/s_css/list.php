@@ -24,6 +24,7 @@
             <th scope="col">번호</th>
             <th scope="col">제목</th>
             <th scope="col">생성날짜</th>
+            <th scope="col">조회수</th>
         </tr>
         </thead>
         <tbody id="list"></tbody>

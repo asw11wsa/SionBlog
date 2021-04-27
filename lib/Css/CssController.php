@@ -26,4 +26,8 @@ class CssController extends Css {
     public function updateCss($id,$title,$content){
         $this->renewCss($id,$title,$content);
     }
+
+    public function countPlus($id){
+        $this->addCount($id);
+    }
 }
