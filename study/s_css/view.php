@@ -3,10 +3,11 @@
 
     $.ajax({
             async: true,
-            url:"/study/s_css/s_css_proc.php",
+            url:"/study/s_blog_proc.php",
             type : "POST",
             data : {
                 functionName: "show",
+                table: "csss",
                 id : <?= $_GET['id']?>
             },
             complete : function(r){
@@ -55,10 +56,11 @@
     function deleteContents(){
         $.ajax({
                 async: true,
-                url:"/study/s_css/s_css_proc.php",
+                url:"/study/s_blog_proc.php",
                 type : "POST",
                 data : {
                     functionName: "delete",
+                    table: "csss",
                     id: <?= $_GET['id']?>
                 },
                 complete : function(){

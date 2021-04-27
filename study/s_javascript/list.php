@@ -3,8 +3,12 @@
 
     $.ajax({
         async: true,
-        url:"/study/s_javascript/list_proc.php",
+        url:"/study/s_blog_proc.php",
         type : "POST",
+        data:{
+            functionName:"list",
+            table: "javascripts"
+        },
         complete : function(r){
             let res = r.responseText;
             // console.log(res);
@@ -21,6 +25,7 @@
             <th scope="col">번호</th>
             <th scope="col">제목</th>
             <th scope="col">생성날짜</th>
+            <th scope="col">조회수</th>
         </tr>
         </thead>
         <tbody id="list"></tbody>

@@ -7,7 +7,7 @@
             type : "POST",
             data : {
                 functionName: "show",
-                table: "vues",
+                table: "blogs",
                 id : <?= $_GET['id']?>
             },
             complete : function(r){
@@ -60,17 +60,17 @@
                 type : "POST",
                 data : {
                     functionName: "delete",
-                    table: "vues",
+                    table: "blogs",
                     id: <?= $_GET['id']?>
                 },
                 complete : function(){
                     //console.log(<?//=$_GET['id']?>//);
-                    location.href="/study/s_vue/index.php?con=";
+                    location.href="/study/s_blog/index.php?con=";
                 }
             }
         );
     }
     function goUpdatePage(id){
-        location.href=`/study/s_vue/index.php?con=update&id=${id}`;
+        location.href=`/study/s_blog/index.php?con=update&id=${id}`;
     }
 </script>

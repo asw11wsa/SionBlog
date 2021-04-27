@@ -6,7 +6,7 @@
             type : "POST",
             data : {
                 functionName: "updateView",
-                table: "phps",
+                table: "blogs",
                 id : <?= $_GET['id']?>
             },
             complete : function(r){
@@ -32,13 +32,13 @@
                 type : "POST",
                 data : {
                     functionName: "update",
-                    table: "phps",
+                    table: "blogs",
                     id : id,
                     title: $('input[name=title]').val(),
                     content: $('input[name=content]').val()
                 },
                 complete : function(){
-                    location.href="/study/s_php/index.php?con=";
+                    location.href="/study/s_blog/index.php?con=";
                 }
             }
         );

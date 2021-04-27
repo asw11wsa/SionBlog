@@ -10,10 +10,11 @@
     function writeCss(){
         $.ajax({
                 async: true,
-                url:"/study/s_css/s_css_proc.php",
+                url:"/study/s_blog_proc.php",
                 type : "POST",
                 data : {
                     functionName: "write",
+                    table: "csss",
                     title: $('input[name=title]').val(),
                     content: $('input[name=content]').val()
                 },

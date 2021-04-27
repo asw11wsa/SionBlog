@@ -80,6 +80,7 @@ $whoops->register();
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto" href="/">Home</a></li>
+                <li><a class="nav-link scrollto" href="/study/s_blog/index.php?con=">FREE</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_html/index.php?con=">HTML</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_css/index.php?con=">CSS</a></li>
                 <li><a class="nav-link scrollto" href="/study/s_javascript/index.php?con=">JAVASCRIPT</a></li>

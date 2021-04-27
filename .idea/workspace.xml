@@ -2,20 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b094e1c-7e31-429c-a2b2-8c683149624f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SionBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SionBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Css/Css.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Css/Css.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Css/CssController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Css/CssController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Css/CssView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Css/CssView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Html/HtmlView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Html/HtmlView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Javascript/JavascriptView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Javascript/JavascriptView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Php/PhpView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Php/PhpView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Vue/VueView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Vue/VueView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/inc/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/inc/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Blog/Blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Blog/Blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Blog/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Blog/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Blog/BlogView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Blog/BlogView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Css/Css.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Css/CssController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Css/CssView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Html/Html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Html/HtmlController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Html/HtmlView.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/study/s_css/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/s_css/s_css_proc.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/s_css_proc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_css/s_css_proc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_css/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_css/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_css/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_css/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_html/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/s_html_proc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_html/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_html/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_html/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_html/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/s_javascript_proc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_javascript/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_javascript/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/s_php_proc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_php/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_php/wirte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/s_vue_proc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study/s_vue/wirte.php" beforeDir="false" afterPath="$PROJECT_DIR$/study/s_vue/wirte.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +50,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -48,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/study/s_vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/study" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,18 +91,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/study" />
       <recent name="$PROJECT_DIR$/study/s_vue" />
       <recent name="$PROJECT_DIR$/study/s_php" />
       <recent name="$PROJECT_DIR$/study/s_javascript" />
       <recent name="$PROJECT_DIR$/study/s_html" />
-      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/study" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/assets/images/background" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/assets/js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +124,7 @@
       <workItem from="1619397003220" duration="1087000" />
       <workItem from="1619399029436" duration="7345000" />
       <workItem from="1619415892322" duration="4955000" />
-      <workItem from="1619481516864" duration="5021000" />
+      <workItem from="1619481516864" duration="16190000" />
     </task>
     <servers />
   </component>

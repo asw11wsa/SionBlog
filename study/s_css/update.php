@@ -2,10 +2,11 @@
 
     $.ajax({
             async: true,
-            url:"/study/s_css/s_css_proc.php",
+            url:"/study/s_blog_proc.php",
             type : "POST",
             data : {
                 functionName: "updateView",
+                table: "csss",
                 id : <?= $_GET['id']?>
             },
             complete : function(r){
@@ -27,10 +28,11 @@
     function goUpdateData(id){
         $.ajax({
                 async: true,
-                url:"/study/s_css/s_css_proc.php",
+                url:"/study/s_blog_proc.php",
                 type : "POST",
                 data : {
                     functionName: "update",
+                    table: "csss",
                     id : id,
                     title: $('input[name=title]').val(),
                     content: $('input[name=content]').val()

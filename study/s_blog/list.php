@@ -7,7 +7,7 @@
         type : "POST",
         data:{
             functionName:"list",
-            table: "csss"
+            table: "blogs"
         },
         complete : function(r){
             let res = r.responseText;
