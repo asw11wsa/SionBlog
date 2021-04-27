@@ -17,5 +17,7 @@
             "Vue\\" : "lib/Vue"
         }
     },
-    "require": {}
+    "require": {
+        "filp/whoops": "^2.12"
+    }
 }
