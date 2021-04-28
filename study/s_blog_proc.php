@@ -8,7 +8,7 @@ switch($_POST['functionName']){
         delete($_POST['table'],$_POST['id']);
         break;
     case "list" :
-        callList($_POST['table'],$_POST['searchType'],$_POST['searchKey']);
+        callList($_POST['table'],$_POST['searchType'],$_POST['searchKey'],$_POST['limit']);
         break;
     case "show" :
         show($_POST['table'],$_POST['id']);
@@ -29,9 +29,9 @@ function delete($table,$id){
     $write->delete($table,$id);
 }
 
-function callList($table,$searchType,$searchKey){
+function callList($table,$searchType,$searchKey,$limit){
     $list = new BlogView();
-    $list->showList($table,$searchType,$searchKey);
+    $list->showListTest($table,$searchType,$searchKey,$limit);
 }
 function show($table,$id){
     $list = new BlogView();
