@@ -5,12 +5,12 @@ namespace Models;
 use Database\Database;
 
 class Blog extends Database{
-    protected function getAllContent($table){
-        $sql = "SELECT * FROM {$table}";
+    protected function getAllContent($table,$limit){
+        $sql = "SELECT * FROM {$table} LIMIT {$limit}";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$table]);
         $results = $stmt->fetchAll();
-        print_r($this->connect());
+//        print_r($this->connect());
        // print_r("<hr>");
        // print_r($sql);
        // print_r("<hr>");
@@ -18,8 +18,8 @@ class Blog extends Database{
         return $results;
     }
 
-    protected function getPickedContent($table,$searchType,$searchKey){
-        $sql = "SELECT * FROM {$table} WHERE REPLACE({$searchType}, ' ', '') LIKE '%{$searchKey}%'";
+    protected function getPickedContent($table,$searchType,$searchKey,$limit){
+        $sql = "SELECT * FROM {$table} WHERE REPLACE({$searchType}, ' ', '') LIKE '%{$searchKey}%' LIMIT {$limit}";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$searchType,$searchKey]);
         $results = $stmt->fetchAll();

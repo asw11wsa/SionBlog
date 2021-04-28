@@ -5,12 +5,12 @@ namespace Controllers;
 use Models\Blog;
 
 class BlogController extends Blog {
-    protected function giveList($table,$searchType,$searchKey){
+    protected function giveList($table,$searchType,$searchKey,$limit){
         if($searchKey == '' && $searchType == ''){
-            $results = $this->getAllContent($table);
+            $results = $this->getAllContent($table,$limit);
             return $results;
         }else{
-            $results = $this->getPickedContent($table,$searchType,$searchKey);
+            $results = $this->getPickedContent($table,$searchType,$searchKey,$limit);
             return $results;
         }
     }
