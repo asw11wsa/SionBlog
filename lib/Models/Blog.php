@@ -1,6 +1,6 @@
 <?php
 
-namespace Blog;
+namespace Models;
 
 use Database\Database;
 

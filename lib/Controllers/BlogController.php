@@ -1,8 +1,8 @@
 <?php
 
-namespace Blog;
+namespace Controllers;
 
-use Blog\Blog;
+use Models\Blog;
 
 class BlogController extends Blog {
     protected function giveList($table,$searchType,$searchKey){

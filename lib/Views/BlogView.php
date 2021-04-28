@@ -1,8 +1,8 @@
 <?php
 
-namespace Blog;
+namespace Views;
 
-use Blog\BlogController;
+use Controllers\BlogController;
 
 class BlogView extends BlogController {
     public function showList($table,$searchType,$searchKey){
