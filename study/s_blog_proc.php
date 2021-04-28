@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
-use Blog\BlogController;
-use Blog\BlogView;
+use Controllers\BlogController;
+use Views\BlogView;
 
 switch($_POST['functionName']){
     case "delete" :
