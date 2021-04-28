@@ -5,8 +5,8 @@ namespace Blog;
 use Blog\BlogController;
 
 class BlogView extends BlogController {
-    public function showList($table){
-        $results = $this->giveList($table);
+    public function showList($table,$searchType,$searchKey){
+        $results = $this->giveList($table,$searchType,$searchKey);
         $num = 0;
         $category = substr($table, 0, -1);
         foreach ($results as $result){

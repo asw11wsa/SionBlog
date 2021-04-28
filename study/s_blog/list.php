@@ -7,7 +7,9 @@
         type : "POST",
         data:{
             functionName:"list",
-            table: "blogs"
+            table: "blogs",
+            searchType: '',
+            searchKey: '',
         },
         complete : function(r){
             let res = r.responseText;
@@ -17,8 +19,19 @@
         }
     }
 );
+
 </script>
 <div class="container">
+    <div id="search">
+        <select name="searchType">
+            <option value="title">제목</option>
+        </select>
+        <input class="input" type="text" name="searchKey" onkeyup="javascript:if(event.keyCode==13) {search()}">
+        <button onclick="search()">검색하기</button>
+
+        <button class="btn btn-primary" onclick="goWritePage()">글작성</button>
+    </div>
+
     <table class="table">
         <thead>
         <tr>
@@ -32,3 +45,29 @@
     </table>
 </div>
 
+<script>
+    function search(){
+        $.ajax({
+                async: true,
+                url:"/study/s_blog_proc.php",
+                type : "POST",
+                data:{
+                    functionName:"list",
+                    table: "blogs",
+                    searchType: $('select[name=searchType]').val(),
+                    searchKey: $('input[name=searchKey]').val().replace(/(\s*)/g,'')
+                },
+                complete : function(r){
+                    let res = r.responseText;
+                    // console.log(res);
+                    $("#list").empty();
+                    $("#list").append(res);
+                }
+            }
+        );
+    }
+
+    function goWritePage(){
+        location.href = '/study/s_blog/index.php?con=write'
+    }
+</script>

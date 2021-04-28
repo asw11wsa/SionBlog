@@ -5,9 +5,14 @@ namespace Blog;
 use Blog\Blog;
 
 class BlogController extends Blog {
-    protected function giveList($table){
-        $results = $this->getAllContent($table);
-        return $results;
+    protected function giveList($table,$searchType,$searchKey){
+        if($searchKey == '' && $searchType == ''){
+            $results = $this->getAllContent($table);
+            return $results;
+        }else{
+            $results = $this->getPickedContent($table,$searchType,$searchKey);
+            return $results;
+        }
     }
 
     protected function givePickId($table,$id){

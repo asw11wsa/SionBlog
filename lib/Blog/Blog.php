@@ -18,6 +18,23 @@ class Blog extends Database{
         return $results;
     }
 
+    protected function getPickedContent($table,$searchType,$searchKey){
+        $sql = "SELECT * FROM {$table} WHERE REPLACE({$searchType}, ' ', '') LIKE '%{$searchKey}%'";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$searchType,$searchKey]);
+        $results = $stmt->fetchAll();
+//        print_r($this->connect());
+//         print_r("<hr>");
+//         print_r($sql);
+//         print_r("<hr>");
+//         print_r($results);
+//        print_r("<hr>");
+//        print_r($searchType);
+//        print_r("<hr>");
+//        print_r($searchKey);
+        return $results;
+    }
+
     protected function create($table,$title,$content){
         $sql = "INSERT INTO {$table} (title,content) VALUE (?,?)";
         $stmt = $this->connect()->prepare($sql);
