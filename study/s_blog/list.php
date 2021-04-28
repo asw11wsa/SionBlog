@@ -10,6 +10,7 @@
             table: "blogs",
             searchType: '',
             searchKey: '',
+            limit: 5
         },
         complete : function(r){
             let res = r.responseText;
@@ -21,31 +22,33 @@
 );
 
 </script>
-<div class="container">
-    <div id="search">
-        <select name="searchType">
+<div class="container d-flex justify-content-center flex-wrap">
+    <div id="search" class="d-flex justify-content-center w-50 mt-2 mb-1">
+        <select name="searchType" class="form-select h-100 w-25">
             <option value="title">제목</option>
         </select>
         <input class="input" type="text" name="searchKey" onkeyup="javascript:if(event.keyCode==13) {search()}">
         <button onclick="search()">검색하기</button>
-
-        <button class="btn btn-primary" onclick="goWritePage()">글작성</button>
     </div>
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">번호</th>
-            <th scope="col">제목</th>
-            <th scope="col">생성날짜</th>
-            <th scope="col">조회수</th>
-        </tr>
-        </thead>
-        <tbody id="list"></tbody>
-    </table>
+    <div id="list" class="container d-flex justify-content-center flex-wrap">
+    </div>
+
+    <button class="btn btn-primary my-3" onclick="showMore()">더보기</button>
 </div>
 
 <script>
+    let limit = 5;
+    let currentSearchType = '';
+    let currentSearchKey = '';
+
+    function limitCheck(){
+        if(currentSearchType && currentSearchKey){
+            limit += 5;
+        }else{
+            limit = 5;
+        }
+    }
     function search(){
         $.ajax({
                 async: true,
@@ -55,10 +58,14 @@
                     functionName:"list",
                     table: "blogs",
                     searchType: $('select[name=searchType]').val(),
-                    searchKey: $('input[name=searchKey]').val().replace(/(\s*)/g,'')
+                    searchKey: $('input[name=searchKey]').val().replace(/(\s*)/g,''),
+                    limit:5
                 },
                 complete : function(r){
                     let res = r.responseText;
+                    currentSearchKey = $('input[name=searchKey]').val().replace(/(\s*)/g,'');
+                    currentSearchType = $('select[name=searchType]').val();
+                    limit = 5;
                     // console.log(res);
                     $("#list").empty();
                     $("#list").append(res);
@@ -67,7 +74,49 @@
         );
     }
 
-    function goWritePage(){
-        location.href = '/study/s_blog/index.php?con=write'
+    function showMore(){
+        if(currentSearchType && currentSearchKey){
+            $.ajax({
+                    async: true,
+                    url:"/study/s_blog_proc.php",
+                    type : "POST",
+                    data:{
+                        functionName:"list",
+                        table: "blogs",
+                        searchType: currentSearchType,
+                        searchKey: currentSearchKey,
+                        limit: limit + 5
+                    },
+                    complete : function(r){
+                        let res = r.responseText;
+                        limit += 5;
+                        console.log(limit);
+                        $("#list").empty();
+                        $("#list").append(res);
+                    }
+                }
+            );
+        }else{
+            $.ajax({
+                    async: true,
+                    url:"/study/s_blog_proc.php",
+                    type : "POST",
+                    data:{
+                        functionName:"list",
+                        table: "blogs",
+                        searchType: '',
+                        searchKey: '',
+                        limit: limit + 5
+                    },
+                    complete : function(r){
+                        let res = r.responseText;
+                        limit += 5;
+                        console.log(limit);
+                        $("#list").empty();
+                        $("#list").append(res);
+                    }
+                }
+            );
+        }
     }
 </script>
