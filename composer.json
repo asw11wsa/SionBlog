@@ -9,12 +9,9 @@
     "autoload": {
         "psr-4": {
             "Database\\" : "lib/Database",
-            "Blog\\" : "lib/Blog",
-            "Css\\" : "lib/Css",
-            "Html\\" : "lib/Html",
-            "Php\\" : "lib/Php",
-            "Javascript\\" : "lib/Javascript",
-            "Vue\\" : "lib/Vue"
+            "Models\\" : "lib/Models",
+            "Views\\" : "lib/Views",
+            "Controllers\\" : "lib/Controllers"
         }
     },
     "require": {
