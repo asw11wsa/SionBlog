@@ -22,6 +22,9 @@ switch($_POST['functionName']){
     case "update" :
         update($_POST['table'],$_POST['title'],$_POST['content'],$_POST['id']);
         break;
+    case "count" :
+        count_items($_POST['table'],$_POST['searchType'],$_POST['searchKey'],$_POST['limit']);
+        break;
 }
 
 function delete($table,$id){
@@ -54,4 +57,9 @@ function update($table,$title,$content,$id){
 function showToUpdate($table,$id){
     $list = new BlogView();
     $list->showPickIdToUpdate($table,$id);
+}
+
+function count_items($table,$searchType,$searchKey){
+    $count = new BlogView();
+    $count->countItems($table,$searchType,$searchKey);
 }
