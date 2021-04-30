@@ -6,7 +6,7 @@ use Database\Database;
 
 class Blog extends Database{
     protected function getAllContent($table,$limit){
-        $sql = "SELECT * FROM {$table} LIMIT {$limit}";
+        $sql = "SELECT * FROM {$table} ORDER BY created_at DESC LIMIT {$limit}";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$table]);
         $results = $stmt->fetchAll();
@@ -19,7 +19,7 @@ class Blog extends Database{
     }
 
     protected function getPickedContent($table,$searchType,$searchKey,$limit){
-        $sql = "SELECT * FROM {$table} WHERE REPLACE({$searchType}, ' ', '') LIKE '%{$searchKey}%' LIMIT {$limit}";
+        $sql = "SELECT * FROM {$table} WHERE REPLACE({$searchType}, ' ', '') LIKE '%{$searchKey}%' ORDER BY created_at DESC LIMIT {$limit}";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$searchType,$searchKey]);
         $results = $stmt->fetchAll();
@@ -66,5 +66,24 @@ class Blog extends Database{
         $sql = "UPDATE {$table} SET view_count = view_count + 1 WHERE id = ?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$id]);
+    }
+
+    protected function getAllCount($table){
+        $sql = "SELECT COUNT(*) as cnt FROM {$table}";
+        $stmt = $this->connect()->query($sql);
+        $results = $stmt->fetchAll();
+//        print_r($this->connect());
+//        print_r($results);
+        return $results;
+    }
+
+    protected function getPickedCount($table,$searchType,$searchKey){
+        $sql = "SELECT COUNT(*) as cnt FROM {$table} WHERE REPLACE({$searchType}, ' ', '') LIKE '%{$searchKey}%'";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$searchType,$searchKey]);
+        $results = $stmt->fetchAll();
+//        print_r($this->connect());
+//        print_r($results);
+        return $results;
     }
 }

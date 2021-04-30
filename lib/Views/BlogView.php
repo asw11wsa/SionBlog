@@ -59,4 +59,11 @@ class BlogView extends BlogController {
             echo $put;
         }
     }
+
+    public function countItems($table,$searchType,$searchKey){
+        $results = $this->countPickItems($table,$searchType,$searchKey);
+        foreach ($results as $result){
+            echo $result['cnt'];
+        }
+    }
 }

@@ -20,6 +20,16 @@ class BlogController extends Blog {
         return $results;
     }
 
+    protected function countPickItems($table,$searchType,$searchKey){
+        if($searchKey == '' && $searchType == ''){
+            $results = $this->getAllCount($table);
+            return $results;
+        }else{
+            $results = $this->getPickedCount($table,$searchType,$searchKey);
+            return $results;
+        }
+    }
+
     public function write($table,$title,$content){
         $this->create($table,$title,$content);
     }
