@@ -1,5 +1,6 @@
 <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
 <script>
+    let count = 0;
 
     $.ajax({
         async: true,
@@ -21,20 +22,41 @@
     }
 );
 
+    $.ajax({
+            async: true,
+            url:"/study/s_blog_proc.php",
+            type : "POST",
+            data:{
+                functionName:"count",
+                table: "blogs",
+                searchType: '',
+                searchKey: ''
+            },
+            complete : function(r){
+                let res = r.responseText;
+                // console.log(res);
+                count = Number(res);
+                // console.log(count);
+                // $("#count").empty();
+                // $("#count").append(res);
+            }
+        }
+    );
+
 </script>
 <div class="container d-flex justify-content-center flex-wrap">
-    <div id="search" class="d-flex justify-content-center w-50 mt-2 mb-1">
-        <select name="searchType" class="form-select h-100 w-25">
+    <div id="search" class="input-group mt-2 mb-1 d-xl-flex w-50">
+        <select name="searchType" class="form-select w-25" id="inputGroupSelect03" aria-label="Example select with button addon">
             <option value="title">제목</option>
         </select>
-        <input class="input" type="text" name="searchKey" onkeyup="javascript:if(event.keyCode==13) {search()}">
-        <button onclick="search()">검색하기</button>
+        <input class="input-group-text w-50" type="text" name="searchKey" onkeyup="javascript:if(event.keyCode==13) {search()}">
+        <button class="btn btn-outline-secondary w-25" onclick="search()">검색</button>
     </div>
 
     <div id="list" class="container d-flex justify-content-center flex-wrap">
     </div>
 
-    <button class="btn btn-primary my-3" onclick="showMore()">더보기</button>
+    <button id="more" class="btn btn-primary my-3" onclick="showMore()">더보기</button>
 </div>
 
 <script>
@@ -69,6 +91,9 @@
                     // console.log(res);
                     $("#list").empty();
                     $("#list").append(res);
+                    if(count > limit){
+                        $("#more").removeClass('d-none');
+                    }
                 }
             }
         );
@@ -93,6 +118,9 @@
                         console.log(limit);
                         $("#list").empty();
                         $("#list").append(res);
+                        if(count < limit){
+                            $("#more").addClass('d-none');
+                        }
                     }
                 }
             );
@@ -114,6 +142,9 @@
                         console.log(limit);
                         $("#list").empty();
                         $("#list").append(res);
+                        if(count < limit){
+                            $("#more").addClass('d-none');
+                        }
                     }
                 }
             );
